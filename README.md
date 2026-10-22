@@ -58,3 +58,16 @@ git push
 ```
 
 GitHub Pages는 `main` 브랜치의 루트(`/`)에서 배포합니다. 푸시 후 새 배포가 완료되면 웹사이트에 반영됩니다.
+
+## Vercel 배포
+
+빌드가 필요 없는 정적 HTML 앱입니다. `vercel.json`에 배포 설정을 포함했습니다. Node.js와 Vercel CLI가 설치된 환경에서 저장소 폴더에서 실행합니다.
+
+```powershell
+vercel login
+vercel deploy --prod
+```
+
+Vercel 프로젝트의 Git 설정에서 이 GitHub 저장소를 연결하면 `main` 브랜치에 푸시할 때 자동 배포할 수 있습니다. 자동 배포 연결에는 Vercel 계정의 GitHub 로그인 연결 및 저장소 접근 권한이 필요할 수 있습니다.
+
+`.vercel/`의 로컬 프로젝트 연결 정보, 토큰, 개인 주행 백업은 공개 저장소에 커밋하지 않습니다. Vercel 주소와 GitHub Pages 주소의 브라우저 저장 공간은 서로 다릅니다. 사이트 간 기록 이전에는 JSON 백업·불러오기를 사용하세요.

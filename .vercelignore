@@ -1,0 +1,9 @@
+.git
+.vercel
+.env
+.env.*
+*.log
+README.md
+riverride-backup-*.json
+riverride-progress-*.png
+riverride-progress-*.svg
