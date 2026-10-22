@@ -1,0 +1,17 @@
+# Local editor and operating system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Credentials and deployment metadata
+.env
+.env.*
+.vercel/
+*.log
+
+# Personal ride backups and progress exports
+riverride-backup-*.json
+riverride-progress-*.png
+riverride-progress-*.svg
